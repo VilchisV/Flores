@@ -12,11 +12,18 @@
     <h1 class="titulo">Estas flores amarillas te las regalo por toda la alegría que traes a mi vida. <br> <br>
         Gracias por iluminarme siempre la vida con tu forma de ser y tu hermoso cuerpo<br><br>
         Te quiero y enserio quiero llegar a ser parte de tu vida otra vez.</h1>
-        <audio autoplay controls>
+        <audio id="audio" autoplay>
           <source src="sound/yungkai-blueOfficialAudio.mp3" type="audio/mpeg">
-          <source src="sound/yungkai-blueOfficialAudio.ogg" type="audio/ogg">
-          Tu navegador no soporta el audio.
-      </audio>
+        </audio>
+        
+        <script>
+          document.addEventListener("click", () => {
+            document.getElementById("audio").play();
+          }, { once: true });
+        </script>
+        
+        
+        
       
     <div id="lyrics">
      
